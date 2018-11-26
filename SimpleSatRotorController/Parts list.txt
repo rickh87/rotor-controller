@@ -1,0 +1,22 @@
+Parts list
+qty 4 KD20C10AX Kyotto Solid State Relay
+qty 2 P-8662-ROHS Style A Goldsun Electronics Co. 24 VAC center tapped transformers
+qty 1 RS-15-4 Mean Well 5 VDC 3 Amp switching power supply (terminal end near Rich Bay)
+qty 1 Arduino Mega 2560 Micro controller (5 VDC connector and usb connectors must face rear)
+qty 4 10PA018 Mountain Switch Momentary push button
+qty 1 DB-25 F http://www.interfacebus.com/Connector_D-Sub_Mechanical_Dimensions.html
+qty 1 DB-9M source same as above
+qty 1 Rich Bay 3014S Switch/Fuse Holder\AC plug combo
+qty 1 MOP-AL162A-BYFY-25E-3IN 1Matrix Orbital Parallel display
+qty 1 EHRJ45P Switchcraft CAT6 panel mount connector
+qty 1 Arduino Ethernet Shield (stacks on top of Arduino Mega 2560
+qty 2 5 position terminal lug strip Digikey 36-817-ND (can be mounted on same machine screw
+            that mounts the transformer)
+qty 4 feet (1 on each corner)
+qty 1 LVB tracker PCB board. Footprint will be attached as a separate file. The footprint of this
+          board should be over the top of the footprint of the Ardnuio so I have the option of 
+          installing either the Arduino or the LVB tracker. The Arduino and the LVB tracker will
+          never be installed at the same time. It will be either one or the other.
+
+
+
