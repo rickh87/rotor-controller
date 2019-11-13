@@ -6,11 +6,15 @@
 
  void setup() {
   Serial.begin(9600);
+  pinMode(28, OUTPUT);
+  pinMode(29, OUTPUT);
+  pinMode(30, OUTPUT);
+  pinMode(31, OUTPUT);
+  digitalWrite(28, LOW);
+  digitalWrite(29, LOW);
+  digitalWrite(30, LOW);
+  digitalWrite(31, LOW);
  }
-
-//int treatValue(int data) {
-//  return (data * 9 / 1024) + 48;
-// }
 
  void loop() {
   // reads the value of the variable resistor
@@ -24,19 +28,31 @@
     Serial.print("UP/DWN ");
     if (value2 > 900){
       Serial.println(" DWN");
+      digitalWrite(28, HIGH);
     }
     else{
       Serial.println(" UP");
+      digitalWrite(29, HIGH);
     }
+  }
+  else{
+    digitalWrite(28, LOW);
+    digitalWrite(29, LOW);   
   }
  if (value1 > 900 || value1 < 100){
     Serial.print("CW/CWW ");
     if (value1 > 900){
-      Serial.println(" CCW");
+      Serial.println(" CW");
+      digitalWrite(30, HIGH);
     }
     else{
-      Serial.println(" CW");
+      Serial.println(" CCW");
+      digitalWrite(31, HIGH);
     }
+  }
+  else{
+    digitalWrite(30, LOW);
+    digitalWrite(31, LOW);  
   }
   delay(1000);
  }
